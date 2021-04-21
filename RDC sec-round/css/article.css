@@ -1,0 +1,290 @@
+/* 文章切换 */
+
+.articles {
+    display: flex;
+    align-items: center;
+    margin-top: 10.3rem;
+    position: relative;
+}
+
+.articles .article-left {
+    background-color: #fff;
+    width: 640px;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.articles .author-side {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 2rem 0 20px;
+}
+
+.articles .article-left .author-side img {
+    flex: 0 0 auto;
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+}
+
+.author-box {
+    display: flex;
+}
+
+.articles .article-left .author-side .articles-about-author {
+    margin: 0.3rem 0 0 1rem;
+    font-size: 13px;
+    color: #8a9aa9;
+}
+
+.articles .article-left .author-side .articles-about-author h3 {
+    color: black;
+}
+
+.follow {
+    margin: auto 0;
+    width: 55px;
+    height: 26px;
+    font-size: 13px;
+    border: 1px solid #6cbd45;
+    background-color: #fff;
+    color: #6cbd45;
+    outline: none;
+}
+
+.article-content {
+    margin: 1rem 4rem 0 6.45rem;
+    font-size: 15px;
+    line-height: 1.6rem;
+    color: #17181a;
+    white-space: pre-line;
+}
+
+.article-imgs {
+    display: flex;
+}
+
+.article-imgs img {
+    margin-right: 4px;
+    margin-top: 4px;
+    width: 9.166rem;
+}
+
+.article-comment {
+    display: flex;
+    margin-top: 1.333rem;
+    height: 34px;
+    border-top: 1px solid #ebebeb;
+}
+
+.article-comment div {
+    flex: 1 1 33.333%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    height: 100%;
+    color: #8a93a0;
+    cursor: pointer;
+    font-family: 'iconfont';
+}
+
+.article-comment div:nth-child(2) {
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+}
+
+.article-comment div:last-child {
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.article-comment div span {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.comment-content {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #ebebeb;
+}
+
+.comment-font {
+    color: #8a9aa9;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 1.67rem 0 5px;
+}
+
+.send-comment {
+    display: flex;
+    position: relative;
+    padding: 1rem 1.333rem;
+    margin: 0 1.666rem 1.333rem;
+    background-color: #fafbfc;
+    border-radius: 3px;
+}
+
+.send-comment>img {
+    margin: 0 1rem 0 0;
+    width: 2.667rem;
+    height: 2.667rem;
+    border-radius: 50%;
+}
+
+.send-comment input {
+    width: 100%;
+    padding: .6rem 1rem;
+    font-size: 1.083rem;
+    line-height: 1.7;
+    color: #17181a;
+    outline: none;
+    border: 1px solid #f1f1f1;
+}
+
+.enter-comment {
+    width: 100%;
+}
+
+.action-comment {
+    display: flex;
+    align-items: center;
+    margin: .65rem 0 0;
+    color: #027fff;
+    font-size: 13px;
+}
+
+.action-comment img {
+    width: 18px;
+    height: 18px;
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.submit span {
+    color: #c2c2c2;
+    margin-right: 8px;
+}
+
+.submit button {
+    padding: .5rem 1.3rem;
+    font-size: 1.25rem;
+    color: #fff;
+    outline: none;
+    border: none;
+    background-color: #027fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.comment-list {
+    margin: 0 1.666rem 0 6.5rem;
+}
+
+.comments {
+    display: flex;
+}
+
+.comment-list img {
+    width: 2.667rem;
+    height: 2.667rem;
+    border-radius: 50%;
+}
+
+.comment-list-content {
+    margin-left: 0.8333rem;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 1.5rem;
+    width: 100%;
+}
+
+.comment-list .author-name {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    line-height: 1.25;
+    white-space: nowrap;
+    color: #333;
+}
+
+.comment-list .author-name img {
+    width: auto;
+    height: auto;
+    border-radius: 0;
+}
+
+.comment-list .author-name span {
+    color: #8a9aa9;
+    margin-left: 4px;
+}
+
+.comment-personal {
+    margin-top: .55rem;
+    font-size: 1.2rem;
+    line-height: 1.833rem;
+    color: #505050;
+}
+
+.comment-time {
+    display: flex;
+    margin-top: 7px;
+    font-weight: 400;
+}
+
+.comment-time span {
+    font-family: 'iconfont';
+    font-size: 1.2rem;
+    color: #8a9aa9;
+}
+
+.response {
+    flex: 0 0 auto;
+    margin-left: auto;
+    display: flex;
+    width: 9rem;
+    justify-content: space-between;
+}
+
+.article-right {
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    width: 300px;
+    border-radius: 2px;
+}
+
+.article-right .suggest h3,
+.article-right .about-suggest {
+    padding: 13px 16px;
+    font-size: 1.25rem;
+    border-bottom: 1px solid hsla(0, 0%, 59.2%, .1);
+}
+
+.article-right .about-suggest li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid hsla(0, 0%, 59.2%, .1);
+}
+
+.article-right .about-suggest li:last-child {
+    border: none;
+}
+
+.article-right .about-suggest .about-img {
+    min-width: 5.67rem;
+    height: 5.67rem;
+    margin-left: 1rem;
+    border-radius: 4px;
+    background-color: red;
+}
