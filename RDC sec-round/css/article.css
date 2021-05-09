@@ -3,7 +3,7 @@
 .articles {
     display: flex;
     align-items: center;
-    margin-top: 10.3rem;
+    margin-top: 7.3rem;
     position: relative;
 }
 
@@ -14,6 +14,7 @@
     background-color: #fff;
     border-radius: 2px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .articles .author-side {
@@ -31,6 +32,7 @@
 
 .author-box {
     display: flex;
+    cursor: pointer;
 }
 
 .articles .article-left .author-side .articles-about-author {
@@ -43,7 +45,8 @@
     color: black;
 }
 
-.follow {
+.follow,
+.cancel-follow {
     margin: auto 0;
     width: 55px;
     height: 26px;
@@ -52,6 +55,13 @@
     background-color: #fff;
     color: #6cbd45;
     outline: none;
+    cursor: pointer;
+}
+
+.cancel-follow {
+    color: #fff;
+    border-color: #6cbd45;
+    background-color: #6cbd45;
 }
 
 .article-content {
@@ -124,9 +134,13 @@
     display: flex;
     position: relative;
     padding: 1rem 1.333rem;
-    margin: 0 1.666rem 1.333rem;
+    margin: 1rem 1.666rem 1.333rem;
     background-color: #fafbfc;
     border-radius: 3px;
+}
+
+.send-more {
+    margin: 0 0 1rem 0;
 }
 
 .send-comment>img {
@@ -158,7 +172,7 @@
     font-size: 13px;
 }
 
-.action-comment img {
+.comment-list .action-comment img {
     width: 18px;
     height: 18px;
 }
@@ -192,6 +206,7 @@
 
 .comments {
     display: flex;
+    padding-top: 1rem;
 }
 
 .comment-list img {
@@ -246,12 +261,35 @@
     color: #8a9aa9;
 }
 
+.response span {
+    cursor: pointer;
+}
+
+.response span:hover {
+    color: #027fff;
+}
+
+.comment-dislike {
+    transform: rotateX(180deg);
+}
+
 .response {
     flex: 0 0 auto;
     margin-left: auto;
     display: flex;
     width: 9rem;
     justify-content: space-between;
+}
+
+.more-comment {
+    padding: 1rem 0 1rem 1rem;
+    background-color: #fafbfc;
+    border-radius: 3px;
+    display: flex;
+}
+
+.more-comment .comment-list-content {
+    border: none;
 }
 
 .article-right {
@@ -287,4 +325,71 @@
     margin-left: 1rem;
     border-radius: 4px;
     background-color: red;
+}
+
+
+/* 第二种 */
+
+.type2-content {
+    padding: 0 2rem;
+}
+
+.type2-content h1 {
+    margin: .67em 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.type2-content p {
+    font-size: 1.167rem;
+    margin: 22px 0;
+}
+
+.article-left-fixed {
+    position: fixed;
+    font-size: 1rem;
+    color: #c6c6c6;
+    top: 16rem;
+    margin-left: -7rem;
+}
+
+.article-left-fixed li {
+    font-family: 'iconfont';
+    position: relative;
+    margin-bottom: .75rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: #fff;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 4%);
+    cursor: pointer;
+}
+
+.article-left-fixed-mid {
+    margin: 2.5rem 0 1rem;
+    text-align: center;
+}
+
+.article-left-fixed img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0.9rem 0.9rem;
+}
+
+.article-thumbup,
+.article-fixed-comment,
+.article-dislike {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 3rem;
+    color: #b2bac2;
+    font-weight: 700;
+}
+
+.article-dislike {
+    display: block;
+    transform: rotateX( 180deg);
 }
